@@ -2,7 +2,7 @@ import os
 import telebot
 from telebot import types
 
-
+CHANNEL_LINK = os.environ.get('CHANNEL_LINK', 'https://t.me/senseiRedirect')
 LOG_FILE = "users.txt"
 
 bot = telebot.TeleBot(BOT_TOKEN)
