@@ -27,7 +27,7 @@ def send_welcome(message):
     log_user(user_id, username)
 
     markup = types.InlineKeyboardMarkup()
-    markup.add(types.InlineKeyboardButton("📢 Join Channel", url=CHANNEL_LINK))
+    markup.add(types.InlineKeyboardButton("📢 Join Channel", url=CHANNEL_LINK )
     
     welcome_text = f"""👋 Welcome, {message.from_user.first_name}!
 
