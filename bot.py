@@ -2,7 +2,7 @@ import os
 import telebot
 from telebot import types
 
-
+BOT_TOKEN = os.environ.get('BOT_TOKEN', '8549761838:AAHvEf_D4Jv3MDFWdKp3ufJ-Mp0Til_v3HM')
 CHANNEL_LINK = os.environ.get('CHANNEL_LINK', 'https://t.me/senseiRedirect')
 LOG_FILE = "users.txt"
 
@@ -27,7 +27,7 @@ def send_welcome(message):
     log_user(user_id, username)
 
     markup = types.InlineKeyboardMarkup()
-    markup.add(types.InlineKeyboardButton("📢 Join Channel", url=CHANNEL_LINK )
+    markup.add(types.InlineKeyboardButton("📢 Join Channel", url=CHANNEL_LINK))
     
     welcome_text = f"""👋 Welcome, {message.from_user.first_name}!
 
